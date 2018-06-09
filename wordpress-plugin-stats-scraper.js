@@ -79,7 +79,7 @@ page.open( url, function( status ) {
 		fs.write( csvFileName, rowText + "\n", 'a' );
 
 	} else {
-		console.err( 'Could not retrieve page' );
+		console.error( 'Could not retrieve page' );
 		phantom.exit( 1 );
 	}
 
