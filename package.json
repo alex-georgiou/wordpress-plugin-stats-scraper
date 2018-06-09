@@ -1,0 +1,24 @@
+{
+  "name": "wordpress-plugin-stats-scraper",
+  "version": "1.0.0",
+  "description": "Scrapes daily installation metrics for a public WordPress plugin hosted on WordPress.org (for use with cron)",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scraper",
+    "wordpress",
+    "plugin",
+    "installations",
+    "issues",
+    "statistics",
+    "csv",
+    "metric"
+  ],
+  "author": "Alexandros Georgiou <alexgeorgiou@gmail.com>",
+  "license": "WTFPL"
+}
