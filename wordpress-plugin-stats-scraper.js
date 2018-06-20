@@ -24,7 +24,7 @@ if ( args.length > 2 ) {
 	 csvFileName = slug + '-stats.csv';
 }
 
-var headersText = '"date","version","installsActive","installsYesterday","installsTotal","issuesMonthTotal","issuesMonthResolved"';
+var headersText = '"date","version","installsActive","downloadsYesterday","downloadsTotal","issuesMonthTotal","issuesMonthResolved"';
 
 if ( ! fs.exists( csvFileName ) ) {
 	fs.write( csvFileName, headersText + "\n", 'a' );
@@ -46,11 +46,11 @@ page.open( url, function( status ) {
 			return jQuery('.widget.plugin-meta li:nth-child(3) strong').text();
 		} );
 		
-		row.installsYesterday = page.evaluate( function() {
+		row.downloadsYesterday = page.evaluate( function() {
 			return jQuery('#plugin-download-history-stats tbody tr:nth-child(2) td').text();
 		} );
 		
-		row.installsTotal = page.evaluate( function() {
+		row.downloadsTotal = page.evaluate( function() {
 			return jQuery('#plugin-download-history-stats tbody tr:nth-child(4) td').text();
 		} );
 
@@ -67,8 +67,8 @@ page.open( url, function( status ) {
 			'"' + row.date
 			+ '","' + row.version
 			+ '","' + row.installsActive
-			+ '",' + row.installsYesterday
-			+ ',' + row.installsTotal
+			+ '",' + row.downloadsYesterday
+			+ ',' + row.downloadsTotal
 			+ ',' + row.issuesMonthTotal
 			+ ',' + row.issuesMonthResolved;
 

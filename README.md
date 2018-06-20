@@ -9,8 +9,8 @@ Scrapes and saves the following info:
 - `date`: The current date
 - `version`: The most recent plugin version
 - `installsActive`: The current number of installs (rounded to 100's)
-- `installsYesterday`: The number of yesterday's new installs 
-- `installsTotal`: The number of total installs
+- `downloadsYesterday`: The number of yesterday's new downloads
+- `downloadsTotal`: The number of total downloads
 - `issuesMonthTotal`: The number of support issues reported in the last month
 - `issuesMonthResolved`: The number of resolved support issues in the last month
 
