@@ -1,6 +1,6 @@
 {
   "name": "wordpress-plugin-stats-scraper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Scrapes daily installation metrics for a public WordPress plugin hosted on WordPress.org (for use with cron)",
   "dependencies": {
     "fs": "^0.0.1-security"
